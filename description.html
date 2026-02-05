@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SunPowerHub | Solar Inverters</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/inventer.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sun Power Hub</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style/about.css">
+  <link rel="stylesheet" href="style/cart.css" />
+  <link rel="stylesheet" href="style/description.css" />
+  <!-- Font Awesome 6.5 (for icons) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+
+/>
+
+  <link rel="stylesheet" href="style/iconfloat.css">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a2e0e9b85f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+     <a href="home.html" class="logo"> sun PowerHub </a>
+    
+    <nav>
+
+      <a href="about.html">About</a>
+      <a href="solarmodul.html">Solar Module</a>
+      <a href="inventer.html">Solar Inverter</a>
+      <a href="service.html">Service</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="search-cart-login">
+      <input type="text" placeholder="Search..." id="searchInput">
+      <div class="cart-icon" id="cartIcon">
+       <div class="cart-icon" id="cartIcon">
+          🛒 <span id="cartCount">0</span>
+       </div>
+      </div>
+      <a href="#" class="login-btn" id="openLogin">Login</a>
+    </div>
+  </header>
+
+  
+</head>
+<body>
+
+<!-- ================= CART PAGE ================= -->
+
+<section class="product_layout">
+
+  <!-- ================= LEFT SIDE: PRODUCT IMAGE + DETAILS ================= -->
+  <div class="product_left">
+
+    <div class="description_container">
+
+      <!-- PRODUCT IMAGE -->
+      <div class="description_image">
+        <img id="productImage" alt="Product Image">
+      </div>
+
+      <!-- BUTTONS BELOW IMAGE -->
+      <div class="action_buttons">
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn buy-now">Buy Now</button>
+      </div>
+
+      <!-- PRODUCT SPECS -->
+      <ul class="specs">
+        <li><strong>Brand:</strong> <span id="brand"></span></li>
+        <li><strong>Power:</strong> <span id="power"></span></li>
+        <li><strong>Voltage:</strong> <span id="voltage"></span></li>
+        <li><strong>Warranty:</strong> <span id="warranty"></span></li>
+        <li><strong>Usage:</strong> <span id="usage"></span></li>
+        <li><strong>Price:</strong> ₹<span id="Price"></span></li>
+      </ul>
+
+      <!-- ABOUT PRODUCT -->
+      <div class="product_about">
+        <h3>About this product</h3>
+        <p id="productDescription">
+          <!-- JS will insert description here -->
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+<script src="javascript/description.js"></script>
+  <!-- ================= RIGHT SIDE: ORDER SUMMARY + DISCOUNT ================= -->
+  <div class="product_right">
+
+    <!-- DISCOUNT CODE -->
+    <div class="Promotional_code">
+      <h2>Have a Discount Code?</h2>
+      <div class="apply_code">
+        <input type="text" placeholder="Enter code">
+        <button>Apply</button>
+      </div>
+    </div>
+
+    <!-- ORDER SUMMARY -->
+    <div class="summary">
+      <h2>Order Summary</h2>
+
+      <div class="summary_price">
+        <div>
+          <h4>Subtotal</h4>
+          <span id="Subtotal">₹0</span>
+        </div>
+
+        <div>
+          <h4>Installation / Delivery</h4>
+          <span id="Delivery">₹70</span>
+        </div>
+
+        <div>
+          <h4>Total Amount</h4>
+          <span id="total_order">₹0</span>
+        </div>
+      </div>
+
+      <button class="checkout" onclick="checkOut()">Proceed to Checkout</button>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2 class="footer-logo">SUN<span>POWER</span> HUB</h2>
+        <p>(+91) 98765-43210</p>
+        <p>123 Solar Avenue, Green City, India</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:support@sunpowerhub.com"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Solar Solutions</h4>
+          <ul>
+            <li><a href="#">Home Solar Systems</a></li>
+            <li><a href="#">Battery Storage</a></li>
+            <li><a href="#">How Solar Works</a></li>
+            <li><a href="#">Installation Process</a></li>
+            <li><a href="#">Warranty</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>SunPower</h4>
+          <ul>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Sun Power Hub. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- === LOGIN MODAL OVERLAY === -->
+  <div id="loginOverlay" class="login-overlay">
+    <div class="login-modal">
+      <span class="close-btn" id="closeLogin">&times;</span>
+      <div class="login-header">
+        <h2>Welcome Back!</h2>
+        <p>Log in to access your solar dashboard</p>
+      </div>
+      <form class="login-form">
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="login-btn-submit">Login</button>
+        <a href="#" class="forgot-link">Forgot Password?</a>
+      </form>
+      <p class="signup-text">Don’t have an account? <a href="#">Contact Support</a></p>
+    </div>
+  </div>
+
+  <!-- === SCRIPTS === -->
+  <script src="javascript/about.js"></script>
+  <script src="javascript/iconfloat.js"></script>
+  <script src="javascript/search.js"></script>
+  <script src="javascript/description.js"></script>
+
+
+  <!-- Scroll Animation -->
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+
+  <script src="javascript/inventer.js"></script>
+  <script src="javascript/cart.js"></script>
+
+
+
+
+<!-- JS -->
+<script src="JavaScript/main.js"></script>
+<script src="JavaScript/cart.js"></script>
+
+
+</body>
+</html>
+

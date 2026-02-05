@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sun PowerHub</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/cart.css">
+</head>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+
+/>
+
+  <link rel="stylesheet" href="style/iconfloat.css">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a2e0e9b85f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+     <a href="home.html" class="logo"> sun PowerHub </a>
+    
+    <nav>
+
+      <a href="about.html">About</a>
+      <a href="solarmodul.html">Solar Module</a>
+      <a href="inventer.html">Solar Inverter</a>
+      <a href="service.html">Service</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div></div>
+    <div class="search-cart-login">
+      <input type="text" placeholder="Search..." id="searchInput">
+      <div id="searchResults"></div>
+    </div> 
+      <!-- CART ICON -->
+        <div class="cart-icon" id="cartIcon">
+  🛒 <span id="cartCount">0</span>
+</div>
+      
+      <a href="#" class="login-btn" id="openLogin">Login</a>
+    </div>
+   
+
+
+  </header>
+<body>
+<!--advertisement-->
+<header class="solar-slider">
+
+  <!-- FIXED TEXT OVERLAY -->
+  <div class="overlay">
+    <h1>Reliable Solar Power for Every Indian Home</h1>
+    <p>Subsidy Support • Free Installation • Long Warranty</p>
+    <a href="contact.html" class="cta-btn">Book Free Visit</a>
+  </div>
+
+  <!-- SLIDES -->
+  <div class="slide active">
+    <img src="image/head.jpg" alt="Solar Panel 1">
+  </div>
+
+  <div class="slide">
+    <img src="image/head3.jpg" alt="Solar Panel 2">
+  </div>
+
+  <div class="slide">
+    <img src="image/head1.jpg" alt="Solar Panel 3">
+  </div>
+
+</header>
+
+
+<!-- customer use-->
+<section class="popular-products">
+  <h2>Most Used Solar Panels by Customers</h2>
+
+  <div class="product-row">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="img-wrapper">
+        <img src="image/image2.avif" alt="SunPower Maxeon">
+        <button class="add-cart-btn"data-name="SunPower Maxeon"
+        data-image="image/image2.avif" data-price=45000 >Add to Cart</button>
+      </div>
+      <h3>SunPower Maxeon</h3>
+      <div class="rating">
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="rating-text">4.9</span>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="img-wrapper">
+        <img src="image/cus2-removebg-preview.png" alt="LG NeON R">
+        <button class="add-cart-btn"data-name="LG NeON R"
+  data-image="image/image2.avif" data-price=25000 >Add to Cart</button>
+      </div>
+      <h3>LG NeON R</h3>
+      <div class="rating">
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star">★</span>
+        <span class="rating-text">4.7</span>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="img-wrapper">
+        <img src="image/w2.jpg" alt="Waaree 540W">
+        <button class="add-cart-btn"data-name="Waaree 540W"
+  data-image="image/w2.jpg"  data-price=35000>Add to Cart</button>
+      </div>
+      <h3>Waaree 540W</h3>
+      <div class="rating">
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="rating-text">4.8</span>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <div class="img-wrapper">
+        <img src="image/cus4.jpg" alt="Adani Solar">
+        <button class="add-cart-btn"data-name="Adani Solar"
+  data-image="image/cus4.jpg" data-price=55000>Add to Cart</button>
+      </div>
+      <h3>Adani Solar</h3>
+      <div class="rating">
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star">★</span>
+        <span class="rating-text">4.6</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div class="hea" >Why Choose Us?</div>
+<section class="information">
+  <!-- ===== CART PANEL ===== -->
+<div id="cartPanel" class="cart-panel">
+  <!-- CART HEADER -->
+  <div class="cart-header">
+    <h2>SHOPPING CART</h2>
+    <button id="closeCart" class="close-btn">✖</button>
+  </div>
+
+  <!-- CART ITEMS -->
+  <div id="cartItems" class="cart-items-wrapper">
+    <!-- Example Cart Item -->
+    <div class="cart-item">
+      <img src="item1.jpg" alt="Item Image">
+      <div class="item-details">
+        <h4>Ultimate Crop Bandeau Tops</h4>
+        <p class="item-price">₹22.00</p>
+        <div class="qty-controls">
+          <button class="qty-btn minus">−</button>
+          <span class="qty-number">2</span>
+          <button class="qty-btn plus">+</button>
+        </div>
+      </div>
+      <div class="item-total">₹44.00</div>
+      <button class="remove-btn">✖</button>
+    </div>
+
+    <div class="cart-item">
+      <img src="item2.jpg" alt="Item Image">
+      <div class="item-details">
+        <h4>Pieces Short Sleeve Sweater</h4>
+        <p class="item-price">₹100.00</p>
+        <div class="qty-controls">
+          <button class="qty-btn minus">−</button>
+          <span class="qty-number">2</span>
+          <button class="qty-btn plus">+</button>
+        </div>
+      </div>
+      <div class="item-total">₹200.00</div>
+      <button class="remove-btn">✖</button>
+    </div>
+
+    <div class="cart-item">
+      <img src="item3.jpg" alt="Item Image">
+      <div class="item-details">
+        <h4>Jacket With Hood In Stone</h4>
+        <p class="item-price">₹266.00</p>
+        <div class="qty-controls">
+          <button class="qty-btn minus">−</button>
+          <span class="qty-number">1</span>
+          <button class="qty-btn plus">+</button>
+        </div>
+      </div>
+      <div class="item-total">₹266.00</div>
+      <button class="remove-btn">✖</button>
+    </div>
+  </div>
+
+  <!-- CART FOOTER -->
+  <div class="cart-footer">
+    <div class="cart-total">
+      Total: <span id="cartTotal">₹631.00</span>
+    </div>
+    <div class="footer-buttons">
+      <button class="view-cart-btn">VIEW CART</button>
+      <button class="checkout-btn">CHECK OUT</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+  <!-- Customer Support -->
+  <div class="info">
+    
+    <div class="info-icon">
+      <img src="image/customerservice-bg.png" alt="24/7 Support">
+    </div>
+    <div class="info-text">
+      <h3>24/7 Customer Support</h3>
+      <p>Our support team is available 24 hours a day, 7 days a week to assist you.</p>
+    </div>
+  </div>
+
+  <!-- Factory Direct -->
+  <div class="info">
+    <div class="info-icon">
+      <img src="image/factorydirectsupply-bg.png" alt="Factory Direct Supply">
+    </div>
+    <div class="info-text">
+      <h3>Factory Direct Supply</h3>
+      <p>We deliver solar panels directly from our factory to ensure best prices and reliability.</p>
+    </div>
+  </div>
+
+  <!-- Premium Quality -->
+  <div class="info">
+    <div class="info-icon">
+      <img src="image/pre-removebg-preview.png" alt="Premium Quality">
+    </div>
+    <div class="info-text">
+      <h3>Premium Quality Products</h3>
+      <p>High-quality solar panels with long lifespan and maximum efficiency.</p>
+    </div>
+  </div>
+
+  <!-- Solar Cell Capacity -->
+  <div class="info">
+    <div class="info-icon">
+      <img src="image/solarcell2-removebg-preview.png" alt="Solar Capacity">
+    </div>
+    <div class="info-text">
+      <h3>54 GW Solar Cells Installed</h3>
+      <p>Trusted by thousands of customers with a total installed capacity of 54 GW worldwide.</p>
+      
+    </div>
+  </div>
+</section><hr>
+
+<!-- ===== SAVE BY GOING SOLAR SECTION (added after info section) ===== -->
+<section class="solar-section hidden">
+  <div class="solar-text fade-up">
+    <h1>Save by<br>Going Solar</h1>
+  </div>
+
+  <div class="solar-form fade-up delay-1">
+    <form>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+      </div>
+
+      <div class="form-group full-width">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Mobile Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+      </div>
+
+      <div class="disclaimer full-width">
+        By clicking “Get a Quote,” I authorize SunPower Hub and its agents to contact me on the phone number I provided via automated calls or text messages. Msg & data rates may apply. View our <a href="#">privacy policy</a>.
+      </div>
+
+      <button class="btn" type="submit">Get a Quote</button>
+    </form>
+  </div>
+</section><hr>
+</body>
+<!-- ======= FOOTER SECTION ======= -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2 class="footer-logo">SUN<span>POWER</span> HUB</h2>
+        <p>(+91) 98765-43210</p>
+        <p>123 Solar Avenue, Green City, India</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:support@sunpowerhub.com"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Solar Solutions</h4>
+          <ul>
+            <li><a href="#">Home Solar Systems</a></li>
+            <li><a href="#">Battery Storage</a></li>
+            <li><a href="#">How Solar Works</a></li>
+            <li><a href="#">Installation Process</a></li>
+            <li><a href="#">Warranty</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>SunPower</h4>
+          <ul>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Sun Power Hub. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+</footer>
+<!-- === LOGIN MODAL OVERLAY === -->
+<div id="loginOverlay" class="login-overlay">
+  <div class="login-modal">
+    <span class="close-btn" id="closeLogin">&times;</span>
+    <h2>Welcome Back!</h2>
+    <p>Login to access your solar dashboard</p>
+
+    <form class="login-form">
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <a href="#" class="forgot-link">Forgot Password?</a>
+    </form>
+
+    <p class="signup-text">Don’t have an account? <a href="#">Contact Support</a></p>
+  </div>
+</div>
+
+ <!-- ===== Floating Helper Panel (Right Side) ===== -->
+<div id="sunpowerhub-helper">
+  <!-- Calculator -->
+  <a href="https://sunpowerhub.com/calculator" target="_blank" class="helper-icon" id="calc-link" title="Solar Calculator">
+    <i class="fa-solid fa-calculator"></i>
+    <span>Calculator</span>
+  </a>
+
+  <!-- Toll-Free -->
+  <a href="https://wa.me/9600850440" class="helper-icon" id="tollfree-link" title="Call Toll-Free">
+    <i class="fa-solid fa-phone"></i>
+    <span>9600850440</span>
+  </a>
+
+  <!-- Dealer Locator -->
+  <a href="https://maps.app.goo.gl/xcacGwH6opbS4E529?g_st=aw" target="_blank" class="helper-icon" id="dealer-link" title="Find Dealer">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Dealer Location</span>
+  </a>
+</div>
+
+
+
+<!-- Font Awesome for Icons -->
+<script src="https://kit.fontawesome.com/a2e0e9b85f.js" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src="javascript/iconfloat.js"></script>
+
+<script src="javascript/cart.js"></script>
+<script src="javascript/search.js"></script>
+
+
+<script src="javascript/script.js"></script>
+
+</html>
+

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sun Power Hub - Solar Services</title>
+  <link rel="stylesheet" href="style/service.css">
+
+  <script src="https://kit.fontawesome.com/a2e0b9d0c0.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sun Power Hub</title>
+
+  <!-- External CSS -->
+   <link rel="stylesheet" href="style/iconfloat.css">
+  <link rel="stylesheet" href="style/about.css">
+  <link rel="stylesheet" href="style/cart.css">
+  <!-- Font Awesome 6.5 (for icons) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+
+/>
+
+  <link rel="stylesheet" href="style/iconfloat.css">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a2e0e9b85f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+     <a href="home.html" class="logo"> sun PowerHub </a>
+    
+    <nav>
+
+      <a href="about.html">About</a>
+      <a href="solarmodul.html">Solar Module</a>
+      <a href="inventer.html">Solar Inverter</a>
+      <a href="service.html">Service</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="search-cart-login">
+      <input type="text" placeholder="Search..." id="searchInput">
+      <div class="cart-icon" id="cartIcon">
+        <div class="cart-icon" id="cartIcon">
+          🛒 <span id="cartCount">0</span>
+        </div>
+      </div>
+      <a href="#" class="login-btn" id="openLogin">Login</a>
+    </div>
+  </header>
+</head>
+<body>
+
+  <!-- Navigation -->
+  
+
+  <!-- Home Section (Image Only) -->
+  <section id="homeImage" class="home-image">
+  <img src="image/head.jpg" alt="Solar Panels">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h2>Why Switch to Solar With Sun Power Hub?</h2>
+
+    <ul class="benefits">
+      <li><i class="fas fa-sun"></i> Reduce electricity costs</li>
+      <li><i class="fas fa-battery-full"></i> Reliable backup power</li>
+      <li><i class="fas fa-globe"></i> Lower your carbon footprint</li>
+      <li><i class="fas fa-home"></i> Increase property value</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Services -->
+<!-- ================= SERVICES ================= -->
+<!-- Services --> <section class="services" id="services">
+   <h2>Our Services</h2> <div class="service-cards"> <div class="card"> 
+     <i class="fas fa-solar-panel"></i> 
+     <h3>Solar Panel Installation</h3> <p>Residential, commercial, off-grid, hybrid, and grid-tied solutions with certified installation.</p> </div> <div class="card">
+         <i class="fas fa-tools"></i> <h3>Repair & Maintenance</h3> <p>Keep your system performing with inspections, inverter checks, cleaning, and annual maintenance contracts.</p> </div> <div class="card"> 
+           <i class="fas fa-chalkboard-teacher"></i> <h3>Training & Workforce Support</h3> <p>Courses for installers, certification, job placement, and freelance solar staffing solutions.</p> </div> </div> </section> <!-- How It Works --> <section class="how-it-works" id="how-it-works"> <h2>How It Works</h2> <div class="steps"> <div class="step"> <h3>1. Free Consultation</h3> <p>Schedule a discussion with our solar specialists.</p> </div> <div class="step"> <h3>2. Custom System Plan</h3> <p>Get a tailored proposal based on your energy needs.</p> </div> <div class="step"> <h3>3. Professional Installation</h3> <p>Our certified technicians set up your system efficiently.</p> </div> <div class="step"> <h3>4. Ongoing Support</h3> <p>Enjoy post-installation performance checks & maintenance.</p> </div> </div> </section>
+
+
+  <!-- Solar Panel Service Request Form -->
+  
+  <!-- Colorful button -->
+<!-- Colorful button -->
+<div style="text-align: center; margin: 40px 0;">
+  <button id="showSolarForm" class="btn-colorful">Request Solar Service</button>
+</div>
+
+<!-- Solar Panel Service Request Form (hidden initially) -->
+<section class="solar-form-section" id="solarRequest" style="display: none;">
+  <h2>Request Solar Panel Service</h2>
+  <p>Fill out the form below & our team will contact you with a custom plan & quote.</p>
+
+  <form id="solarRequestForm" action="#" method="POST">
+    <div class="form-group">
+      <label for="fullName">Full Name *</label>
+      <input type="text" id="fullName" name="fullName" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+   
+    <div class="form-group">
+        <label for="phone">Mobile Number *</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Installation Address *</label>
+        <input type="text" id="address" name="address" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group half">
+          <label for="city">City *</label>
+          <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group half">
+          <label for="state">State *</label>
+          <input type="text" id="state" name="state" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="serviceType">Type of Service *</label>
+        <select id="serviceType" name="serviceType" required>
+          <option value="">Select</option>
+          <option value="newInstallation">New Installation</option>
+          <option value="repairMaintenance">Repair & Maintenance</option>
+          <option value="upgradeExpansion">Upgrade / Expansion</option>
+          <option value="consultation">Consultation</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="electricBill">Monthly Electricity Bill (Approx.)</label>
+        <input type="number" id="electricBill" name="electricBill" placeholder="₹">
+      </div>
+
+      <div class="form-group">
+        <label for="systemSize">Estimated Capacity Needed (kW)</label>
+        <input type="number" id="systemSize" name="systemSize" step="0.1">
+      </div>
+
+      <div class="form-group">
+        <label for="roofType">Roof Type</label>
+        <select id="roofType" name="roofType">
+          <option value="">Select</option>
+          <option value="rccFlat">RCC Flat</option>
+          <option value="tilted">Tilted / Tiled</option>
+          <option value="metalSheet">Metal Sheet</option>
+          <option value="groundMount">Ground Mount</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="additionalInfo">Additional Details / Questions</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Tell us anything else..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn-submit">Submit Request</button>
+      </div>
+  </form>
+</section>
+
+
+  
+
+  <!-- Contact CTA -->
+  <section class="contact" id="contact">
+    <h2>Ready to Go Solar?</h2>
+    <p>Contact us today for a free quote and solar consultation!</p>
+    <a href="mailto:info@sunpowerhub.com" class="btn">Email Us</a>
+    <a href="tel:+91XXXXXXXXXX" class="btn">Call Now</a>
+  </section>
+
+  <!-- FAQ at the bottom -->
+  <section class="faq" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What types of solar systems are there?</button>
+      <div class="faq-answer">
+        <p>On-Grid (grid tied), Off-Grid (standalone), Hybrid (with battery backup).</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Do solar panels work on cloudy days?</button>
+      <div class="faq-answer">
+        <p>Yes — they generate power in indirect sunlight, though slightly reduced.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What’s the payback period?</button>
+      <div class="faq-answer">
+        <p>Typically 4–6 years depending on system size and usage.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How much maintenance is needed?</button>
+      <div class="faq-answer">
+        <p>Minimal — periodic cleaning and an annual check-up are usually sufficient.</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2 class="footer-logo">SUN<span>POWER</span> HUB</h2>
+        <p>(+91) 98765-43210</p>
+        <p>123 Solar Avenue, Green City, India</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:support@sunpowerhub.com"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Solar Solutions</h4>
+          <ul>
+            <li><a href="#">Home Solar Systems</a></li>
+            <li><a href="#">Battery Storage</a></li>
+            <li><a href="#">How Solar Works</a></li>
+            <li><a href="#">Installation Process</a></li>
+            <li><a href="#">Warranty</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>SunPower</h4>
+          <ul>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Sun Power Hub. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+   <!-- ===== Floating Helper Panel (Right Side) ===== -->
+<div id="sunpowerhub-helper">
+  <!-- Calculator -->
+  <a href="https://sunpowerhub.com/calculator" target="_blank" class="helper-icon" id="calc-link" title="Solar Calculator">
+    <i class="fa-solid fa-calculator"></i>
+    <span>Calculator</span>
+  </a>
+
+  <!-- Toll-Free -->
+  <a href="https://wa.me/9600850440" class="helper-icon" id="tollfree-link" title="Call Toll-Free">
+    <i class="fa-solid fa-phone"></i>
+    <span>9600850440</span>
+  </a>
+
+  <!-- Dealer Locator -->
+  <a href="https://maps.app.goo.gl/xcacGwH6opbS4E529?g_st=aw" target="_blank" class="helper-icon" id="dealer-link" title="Find Dealer">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Dealer Location</span>
+  </a>
+</div>
+
+  <script src="javascript/iconfloat.js"></script>
+  <script src="javascript/service.js"></script>
+   <script src="javascript/cart.js"></script>
+   </body>
+</html>
+
+

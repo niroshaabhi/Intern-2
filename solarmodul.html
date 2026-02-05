@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sun Power Hub</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="style/about.css">
+  <link rel="stylesheet" href="style/solarmodul.css">
+  <link rel="stylesheet" href="style/cart.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e9b85f.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome 6.5 (for icons) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+
+/>
+
+  <link rel="stylesheet" href="style/iconfloat.css">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a2e0e9b85f.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+     <a href="home.html" class="logo"> sun PowerHub </a>
+    
+    <nav>
+
+      <a href="about.html">About</a>
+      <a href="solarmodul.html">Solar Module</a>
+      <a href="inventer.html">Solar Inverter</a>
+      <a href="service.html">Service</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="search-cart-login">
+      <input type="text" placeholder="Search..." id="searchInput">
+    <div id="searchResults"></div>
+    </div> 
+      <div class="cart-icon" id="cartIcon">
+        <div class="cart-icon" id="cartIcon">
+          🛒 <span id="cartCount">0</span>
+        </div>
+
+      </div>
+      <a href="#" class="login-btn" id="openLogin">Login</a>
+    </div>
+  </header>
+   <!-- CART ICON -->
+        
+
+  <!-- ===== MAIN PRODUCT SECTION ===== -->
+  <section class="product-page">
+
+    <!-- === FILTER SIDEBAR === -->
+    <aside class="filter-sidebar">
+      <h3>Filter By</h3>
+
+      <div class="filter-group">
+        <label>Brand</label>
+        <select id="filterBrand">
+          <option value="all">All</option>
+          <option value="Sunpower">SunPower</option>
+          <option value="LG">LG</option>
+          <option value="Waaree">Waaree</option>
+          <option value="Adani">Adani</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Type</label>
+        <select id="filterType">
+          <option value="all">All</option>
+          <option value="Fixed">Fixed</option>
+          <option value="Portable">Portable</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Price</label>
+        <select id="filterPrice">
+          <option value="all">All</option>
+          <option value="0-1000">Below ₹1,000</option>
+          <option value="1000-3000">₹1,000–₹3,000</option>
+          <option value="3000-6000">₹3,000–₹6,000</option>
+          <option value="6000+">₹6,000+</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Warranty</label>
+        <select id="filterWarranty">
+          <option value="all">All</option>
+          <option value="1">1 Year</option>
+          <option value="5">5 Years</option>
+          <option value="10">10+ Years</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Voltage</label>
+        <select id="filterVoltage">
+          <option value="all">All</option>
+          <option value="12">12V</option>
+          <option value="24">24V</option>
+          <option value="48">48V</option>
+        </select>
+      </div>
+
+      <button id="applyFilters" class="apply-btn">Apply Filters</button><br>
+
+      <button id="clearFilters" class="clear-btn">Clear Filters</button>
+    </aside>
+     <!-- ===== CART PANEL ===== -->
+   <!-- ===== CART PANEL ===== -->
+<div id="cartPanel" class="cart-panel">
+  <!-- CART HEADER -->
+  <div class="cart-header">
+    <h2>SHOPPING CART</h2>
+    <button id="closeCart" class="close-btn">✖</button>
+  </div>
+
+  <!-- CART ITEMS -->
+  <div id="cartItems" class="cart-items-wrapper">
+    <!-- Example Cart Item -->
+    <div class="cart-item">
+      <img src="item1.jpg" alt="Item Image">
+      <div class="item-details">
+        <h4>Ultimate Crop Bandeau Tops</h4>
+        <p class="item-price">₹22.00</p>
+        <div class="qty-controls">
+          <button class="qty-btn minus">−</button>
+          <span class="qty-number">2</span>
+          <button class="qty-btn plus">+</button>
+        </div>
+      </div>
+      <div class="item-total">₹44.00</div>
+      <button class="remove-btn">✖</button>
+    </div>
+
+    <div class="cart-item">
+      <img src="item2.jpg" alt="Item Image">
+      <div class="item-details">
+        <h4>Pieces Short Sleeve Sweater</h4>
+        <p class="item-price">₹100.00</p>
+        <div class="qty-controls">
+          <button class="qty-btn minus">−</button>
+          <span class="qty-number">2</span>
+          <button class="qty-btn plus">+</button>
+        </div>
+      </div>
+      <div class="item-total">₹200.00</div>
+      <button class="remove-btn">✖</button>
+    </div>
+
+    <div class="cart-item">
+      <img src="item3.jpg" alt="Item Image">
+      <div class="item-details">
+        <h4>Jacket With Hood In Stone</h4>
+        <p class="item-price">₹266.00</p>
+        <div class="qty-controls">
+          <button class="qty-btn minus">−</button>
+          <span class="qty-number">1</span>
+          <button class="qty-btn plus">+</button>
+        </div>
+      </div>
+      <div class="item-total">₹266.00</div>
+      <button class="remove-btn">✖</button>
+    </div>
+  </div>
+
+  <!-- CART FOOTER -->
+  <div class="cart-footer">
+    <div class="cart-total">
+      Total: <span id="cartTotal">₹631.00</span>
+    </div>
+    <div class="footer-buttons">
+      <button class="view-cart-btn">VIEW CART</button>
+      <button class="checkout-btn">CHECK OUT</button>
+    </div>
+  </div>
+</div>
+
+    <!-- === PRODUCT GRID === -->
+    <section class="product-grid">
+
+      <div class="product-card" data-brand="Sunpower" data-type="Fixed" data-price="4200" data-warranty="10" data-voltage="12">
+        <img src="image/w2.jpg" alt="SunPower Maxeon">
+        <div class="product-info">
+          <h3>fixed 400W</h3>
+          <p><strong>Brand:</strong> SunPower</p>
+          <p><strong>Type:</strong> Fixed Panel</p>
+          <p><strong>Voltage:</strong> 12V</p>
+          <p><strong>Warranty:</strong> 10 Years</p>
+          <p class="price">₹4,200</p>
+       
+        <button class="cart-btn" data-price="4200">Add to Cart</button>
+        <button class="btn-buynow">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-brand="LG" data-type="Portable" data-price="2500" data-warranty="5" data-voltage="24">
+        <img src="image/cus1.jpg" alt="LG NeON R">
+        <div class="product-info">
+          <h3>portable panel 250W</h3>
+          <p><strong>Brand:</strong> LG</p>
+          <p><strong>Type:</strong> Portable Panel</p>
+          <p><strong>Voltage:</strong> 24V</p>
+          <p><strong>Warranty:</strong> 5 Years</p>
+          <p class="price">₹2,500</p>
+        
+        <button class="cart-btn" data-price="2500">Add to Cart</button>
+        <button class="btn-buynow">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-brand="Waaree" data-type="Fixed" data-price="3100" data-warranty="10" data-voltage="12">
+        <img src="image/w2.jpg" alt="Waaree 540W">
+        <div class="product-info">
+          <h3>fixed 540W Panel</h3>
+          <p><strong>Brand:</strong> Waaree</p>
+          <p><strong>Type:</strong> Fixed Panel</p>
+          <p><strong>Voltage:</strong> 12V</p>
+          <p><strong>Warranty:</strong> 10 Years</p>
+          <p class="price">₹3,100</p>
+        
+        <button class="cart-btn" data-price="3100">Add to Cart</button>
+        <button class="btn-buynow">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-brand="Adani" data-type="Portable" data-price="1800" data-warranty="5" data-voltage="24">
+        <img src="image/cus3.jpg" alt="Adani Solar">
+        <div class="product-info">
+          <h3> portable panel 320W</h3>
+          <p><strong>Brand:</strong> Adani</p>
+          <p><strong>Type:</strong> Portable Panel</p>
+          <p><strong>Voltage:</strong> 24V</p>
+          <p><strong>Warranty:</strong> 5 Years</p>
+          <p class="price">₹1,800</p>
+      
+        <button class="cart-btn" data-price="1800">Add to Cart</button>
+        <button class="btn-buynow">Buy Now</button>
+        </div>
+      </div>
+
+    </section>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-left">
+        <h2 class="footer-logo">SUN<span>POWER</span> HUB</h2>
+        <p>(+91) 98765-43210</p>
+        <p>123 Solar Avenue, Green City, India</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:support@sunpowerhub.com"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Solar Solutions</h4>
+          <ul>
+            <li><a href="#">Home Solar Systems</a></li>
+            <li><a href="#">Battery Storage</a></li>
+            <li><a href="#">How Solar Works</a></li>
+            <li><a href="#">Installation Process</a></li>
+            <li><a href="#">Warranty</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>SunPower</h4>
+          <ul>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Sun Power Hub. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- === LOGIN MODAL === -->
+  <div id="loginOverlay" class="login-overlay">
+    <div class="login-modal">
+      <span class="close-btn" id="closeLogin">&times;</span>
+      <h2>Welcome Back!</h2>
+      <p>Login to access your solar dashboard</p>
+
+      <form class="login-form">
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="login-btn-submit">Login</button>
+        <a href="#" class="forgot-link">Forgot Password?</a>
+      </form>
+
+      <p class="signup-text">Don’t have an account? <a href="#">Contact Support</a></p>
+    </div>
+  </div>
+   <!-- ===== Floating Helper Panel (Right Side) ===== -->
+<div id="sunpowerhub-helper">
+  <!-- Calculator -->
+  <a href="https://sunpowerhub.com/calculator" target="_blank" class="helper-icon" id="calc-link" title="Solar Calculator">
+    <i class="fa-solid fa-calculator"></i>
+    <span>Calculator</span>
+  </a>
+
+  <!-- Toll-Free -->
+  <a href="https://wa.me/9600850440" class="helper-icon" id="tollfree-link" title="Call Toll-Free">
+    <i class="fa-solid fa-phone"></i>
+    <span>96008 50440</span>
+  </a>
+
+  <!-- Dealer Locator -->
+  <a href="https://maps.app.goo.gl/xcacGwH6opbS4E529?g_st=aw" target="_blank" class="helper-icon" id="dealer-link" title="Find Dealer">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Dealer Location</span>
+  </a>
+</div>
+
+
+
+<!-- Font Awesome for Icons -->
+<script src="https://kit.fontawesome.com/a2e0e9b85f.js" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src="javascript/iconfloat.js"></script>
+<!-- === SCRIPTS ===<script src="javascript/cart.js"></script>-->
+
+
+
+  <!-- === SCRIPTS === -->
+  <script src="javascript/solarmodul.js"></script>
+</body>
+</html>

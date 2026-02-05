@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sun Power Hub</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style/about.css">
+  <!-- Font Awesome 6.5 (for icons) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+
+/>
+
+  <link rel="stylesheet" href="style/iconfloat.css">
+   <link rel="stylesheet" href="style/cart.css">
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a2e0e9b85f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+     <a href="home.html" class="logo"> sun PowerHub </a>
+    
+    <nav>
+
+      <a href="about.html">About</a>
+      <a href="solarmodul.html">Solar Module</a>
+      <a href="inventer.html">Solar Inverter</a>
+      <a href="service.html">Service</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="search-cart-login">
+      <input type="text" placeholder="Search..." id="searchInput">
+      <div class="cart-icon" id="cartIcon"><!-- CART ICON -->
+        <div class="cart-icon" id="cartIcon">
+          🛒 <span id="cartCount">0</span>
+        </div>
+
+      </div>
+      <a href="#" class="login-btn" id="openLogin">Login</a>
+    </div>
+  </header>
+
+
+  <!-- === HERO BANNER === -->
+  <section class="about-hero hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="fade-in">
+        Empowering a Greener Future</h1>
+      <p class="fade-in delay-1">
+        Sun Power Hub — Leading the solar energy revolution with innovation, integrity, and sustainability.
+      </p>
+    </div>
+  </section>
+
+  <!-- === LEADING OUR JOURNEY === -->
+  <section class="about-section fade-in">
+    <h2>Leading Our Journey</h2>
+    <p>
+      At <strong>Sun Power Hub</strong>, we believe the journey toward a sustainable planet starts with a single solar panel. 
+      Since our inception, we have been driven by a purpose — to make renewable energy affordable and accessible for all.
+    </p>
+  </section>
+
+  <!-- === OUR LEGACY (Timeline) === -->
+  <section class="timeline-section fade-in delay-1">
+    <h2>Our Legacy</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>2015 — The Beginning</h3>
+          <p>Sun Power Hub was founded with the goal of creating a solar-powered India. Our small team began with only a handful of installations.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>2018 — National Expansion</h3>
+          <p>Our innovation and reliability helped us expand across multiple states, serving homes and industries alike.</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>2021 — Technological Innovation</h3>
+          <p>Introduced high-efficiency panels and AI-based monitoring systems to improve energy output and customer experience.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>2025 — Global Outlook</h3>
+          <p>Now, we are expanding globally, partnering with innovators and governments to power a sustainable tomorrow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === VISION & MISSION === -->
+  <section class="about-section fade-in delay-2">
+    <h2>Our Vision & Mission</h2>
+    <div class="vision-mission">
+      <div class="vm-card">
+        <i class="fas fa-sun"></i>
+        <h3>Our Vision</h3>
+        <p>To illuminate the world through clean, affordable solar energy that empowers people and preserves our planet.</p>
+      </div>
+      <div class="vm-card">
+        <i class="fas fa-seedling"></i>
+        <h3>Our Mission</h3>
+        <p>To deliver next-generation solar solutions that redefine energy consumption, foster innovation, and promote sustainability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === OUR VALUES === -->
+  <section class="about-section fade-in delay-3">
+    <h2>Our Values</h2>
+    <div class="values-grid">
+      <div class="value-box">
+        <i class="fas fa-lightbulb"></i>
+        <h4>Innovation</h4>
+        <p>We embrace creativity and technology to deliver cutting-edge solar systems.</p>
+      </div>
+      <div class="value-box">
+        <i class="fas fa-handshake"></i>
+        <h4>Integrity</h4>
+        <p>Transparency, honesty, and reliability guide every project we undertake.</p>
+      </div>
+      <div class="value-box">
+        <i class="fas fa-leaf"></i>
+        <h4>Sustainability</h4>
+        <p>Committed to protecting our environment and reducing carbon emissions.</p>
+      </div>
+      <div class="value-box">
+        <i class="fas fa-users"></i>
+        <h4>Customer First</h4>
+        <p>We prioritize customer satisfaction through personalized solar solutions.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Floating Helper Panel (Right Side) ===== -->
+<div id="sunpowerhub-helper">
+  <!-- Calculator -->
+  <a href="https://sunpowerhub.com/calculator" target="_blank" class="helper-icon" id="calc-link" title="Solar Calculator">
+    <i class="fa-solid fa-calculator"></i>
+    <span>Calculator</span>
+  </a>
+
+  <!-- Toll-Free -->
+  <a href="https://wa.me/9600850440" class="helper-icon" id="tollfree-link" title="Call Toll-Free">
+    <i class="fa-solid fa-phone"></i>
+    <span>9600850440</span>
+  </a>
+
+  <!-- Dealer Locator -->
+  <a href="https://maps.app.goo.gl/xcacGwH6opbS4E529?g_st=aw" target="_blank" class="helper-icon" id="dealer-link" title="Find Dealer">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Dealer Location</span>
+  </a>
+</div>
+
+
+  
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2 class="footer-logo">SUN<span>POWER</span> HUB</h2>
+        <p>(+91) 98765-43210</p>
+        <p>123 Solar Avenue, Green City, India</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:support@sunpowerhub.com"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Solar Solutions</h4>
+          <ul>
+            <li><a href="#">Home Solar Systems</a></li>
+            <li><a href="#">Battery Storage</a></li>
+            <li><a href="#">How Solar Works</a></li>
+            <li><a href="#">Installation Process</a></li>
+            <li><a href="#">Warranty</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>SunPower</h4>
+          <ul>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Sun Power Hub. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- === LOGIN MODAL OVERLAY === -->
+  <div id="loginOverlay" class="login-overlay">
+    <div class="login-modal">
+      <span class="close-btn" id="closeLogin">&times;</span>
+      <div class="login-header">
+        <h2>Welcome Back!</h2>
+        <p>Log in to access your solar dashboard</p>
+      </div>
+      <form class="login-form">
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="login-btn-submit">Login</button>
+        <a href="#" class="forgot-link">Forgot Password?</a>
+      </form>
+      <p class="signup-text">Don’t have an account? <a href="#">Contact Support</a></p>
+    </div>
+  </div>
+
+  <!-- === SCRIPTS === -->
+  <script src="javascript/about.js"></script>
+  <script src="javascript/iconfloat.js"></script>
+  <script src="javascript/cart.js"></script>
+
+  <!-- Scroll Animation -->
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

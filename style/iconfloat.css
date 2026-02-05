@@ -1,0 +1,78 @@
+/* ===== Floating Helper Panel ===== */
+#sunpowerhub-helper {
+  position: fixed;
+  right: 20px;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  text-align: center;
+}
+
+.helper-icon {
+  display: block;
+  background: linear-gradient(135deg, #0072CE, #00B4DB);
+  color: #fff;
+  margin: 8px 0;
+  padding: 12px 14px;
+  border-radius: 50px;
+  width: 55px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  animation: float 4s ease-in-out infinite;
+}
+
+.helper-icon i {
+  font-size: 20px;
+}
+
+.helper-icon span {
+  display: none;
+  font-size: 14px;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+/* Hover Slide Animation */
+.helper-icon:hover {
+  width: auto;
+  padding: 12px 18px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #005bb5, #0092d6);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.helper-icon:hover span {
+  display: inline;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  #sunpowerhub-helper {
+    bottom: 15px;
+    top: auto;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+  }
+
+  .helper-icon {
+    margin: 0 6px;
+    width: 50px;
+  }
+
+  .helper-icon span {
+    display: none;
+  }
+}
+
